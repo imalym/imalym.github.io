@@ -1,0 +1,122 @@
+/*in this challenge i learned that we can start with mobile-first 
+then using media queries to adjust the layout for larger screens
+it will look better on diffrent screen sizes
++NOTE THAT this is not WRONG */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: hsl(0, 0%, 8%);
+    font-family: inter;
+    /*display: flex;
+    align-content: center;
+    justify-content: center;*/
+}
+
+.container{
+    background: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    /*width: 25%;margin-top: 4%;*/
+    margin: auto auto;
+    width: 90%;margin-top: 15%;
+    border-radius: 20px;
+    /*display: flex;
+    justify-content: center;
+    height: 900px;*/
+}
+.image{
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.image img{
+    border-radius: 50%;
+    width: 100px;
+    margin: 13% 0 10% 0;
+    
+   
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    /*width: 200px;
+    flex-wrap: wrap;*/
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+.information p{
+    font-size: 1.4rem;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 6%;
+}
+.fa-location-dot{
+    margin-right: 5px;
+}
+
+q{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: hsla(0, 0%, 100%, 0.88);
+    margin-bottom: 8%;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    margin: auto auto;
+    margin-bottom: 13%;
+
+}
+
+button{
+    color: aliceblue;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    margin: 2%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+
+button:last-of-type{
+    margin-bottom: 13%;
+
+}
+
+.fa-brands{
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: hsl(75, 94%, 57%)    ;
+    color: hsl(0, 0%, 8%);
+}
+
+@media only screen and (min-width:1050px){
+    .container{
+        /*width: 90%;
+        margin-top: 15%;*/
+        width: 25%;margin-top: 4%;
+    }
+}
